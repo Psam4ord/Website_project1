@@ -8,7 +8,9 @@
 --primary-color: #047aed;
 --secondary-color: #1c3fa8;
 --dark-color: #002240;
---light-color: #f4f4f4;
+--light-color: #c4c2c2;
+--success-color:#5cb85c;
+--error-color:#d9534f;
 
 }
 
@@ -105,6 +107,36 @@ img{
 
 }
 
+/* text colors */
+.text-primary{
+    color: var(--primary-color);
+   
+}
+
+.text-secondary{
+    color: var(--secondary-color);
+    
+}
+
+.text-dark{
+    color: var(--dark-color);
+ 
+}
+.text-light{
+    color: var(--light-color);
+    
+}
+
+.bg-primary a,
+ .btn-primary a,
+ .bg-secondary a, 
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a {
+    color: #fff;
+
+}
+
 
 
 /* Text Sizes */
@@ -146,6 +178,9 @@ font-size: 40px;
     grid-template-columns: 55% 45%;
     gap: 40px;
 }
+.showcase-text{
+    animation: slideInFromLeft 1s ease-in;
+}
 
 .showcase-form{
     position: relative;
@@ -155,6 +190,7 @@ font-size: 40px;
     padding: 40px;
     z-index: 100;
     justify-self: flex-end;
+    animation: slideInFromRight 1s ease-in;
 }
 .showcase-form .form-control{
     margin: 30px 0;
@@ -192,6 +228,7 @@ font-size: 40px;
 /* stats */
 .stats{
     padding-top: 100px;
+    animation: slideInFromBottom 1s ease-in;
 }
 .stats-heading{
     max-width: 500px;
@@ -231,9 +268,45 @@ transition: transform 0.2s ease-out;
 .sponsers .card:hover{
     transform: translateY(-10px);
 }
+/* products */
+.products-head img{
+    width: 100%;
+    justify-self: flex-end;
+}
+.products-sub-head img{
+    width: 400px;
+    justify-self: flex-end;
+}
+
+/* Contacts */
+.contacts-head img{
+    width: 300px;
+    justify-self: flex-end;
+}
+.middle{
+    text-align: center;
+    justify-self: flex-end;
+}
+
+.contacts-main h3{
+    margin: 20px 0;
+}
+.contacts-main .grid{
+    grid-template-columns: 1fr 2fr;
+    align-items: flex-start;
+}
+.contacts-main li{
+    font-size: 17px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px #ccc solid;
+}
+.contacts-main a:hover{
+    font-weight: bold;
+}
 
 /* footer */
-.footer .social a{
+.footer .social a{ 
     margin: 0 10px;
 }
 .social h3{
@@ -281,6 +354,25 @@ border:1px #fff solid ;
 
 .text-center {
 text-align: center;
+}
+
+
+/* Alert */
+.alert{
+    background-color: var(--light-color);
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+.alert i{
+    margin-right: 10px;
+}
+.alert-success{
+    background-color: var(--success-color);
+    color: #fff;
+}
+.alert-error{
+    background-color: var(--error-color);
 }
 .flex{
     display: flex;

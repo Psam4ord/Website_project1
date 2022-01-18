@@ -5,7 +5,9 @@
 .showcase .grid,
 .stats .grid,
 .cli .grid,
-.cloud .grid{
+.cloud .grid,
+.products-head .grid,
+.contacts-main .grid{
     grid-template-columns: 1fr ;
 }
 .showcase{
@@ -14,6 +16,7 @@
 .showcase-text{
     text-align: center;
     margin: 40px;
+    animation: slideInFromTop 1s ease-in;
 }
 .showcase-form{
     justify-self: center;
@@ -23,6 +26,16 @@
 .cli .grid > *:first-child {
     grid-column: 1;
      grid-row: 1; 
+}
+.products-head,
+.products-sub-head,
+.contacts-main{
+    text-align: center;
+}
+.products-head img,
+.products-sub-head img,
+.contacts-main img {
+    justify-self:center;
 }
 }
 
@@ -41,3 +54,45 @@
         background-color: rgba(0, 0, 0, 0.1);
     }
 }
+
+/* Animations */
+@keyframes slideInFromLeft{
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+    
+}
+@keyframes slideInFromRight{
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+    
+}
+
+@keyframes slideInFromTop{
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+    
+}
+@keyframes slideInFromBottom{
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+    
+}
+
+
+

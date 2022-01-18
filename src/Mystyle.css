@@ -250,10 +250,7 @@ font-size: 40px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
 }
-.cli .grid > *:first-child {
-    /* grid-column: 1 / span 2; */
-    /* grid-row: 1 / span 2; */
-}
+
 
 /* cloud */
 .cloud .grid{
@@ -447,19 +444,19 @@ padding: 1.5rem;
 }
 
 .p-1{
-    paddi: 1rem ;
+    padding: 1rem ;
 }
 .p-2{
-paddi: 1.5rem;
+padding: 1.5rem;
 }
 .p-3{
-    paddi: 2rem ;
+    padding: 2rem ;
 }
 .p-4{
-    paddi: 3rem ;
+    padding: 3rem ;
 }
 .p-5{
-    paddi: 5rem;
+    padding: 5rem;
 }
 
 

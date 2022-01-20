@@ -53,6 +53,10 @@
         padding: 10px;
         background-color: rgba(0, 0, 0, 0.1);
     }
+
+    .products-sub-head img{
+        width: 100%;
+    }
 }
 
 /* Animations */

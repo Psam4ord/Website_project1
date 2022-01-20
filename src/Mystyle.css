@@ -8,7 +8,7 @@
 --primary-color: #047aed;
 --secondary-color: #1c3fa8;
 --dark-color: #002240;
---light-color: #c4c2c2;
+--light-color: #f4f4f4;
 --success-color:#5cb85c;
 --error-color:#d9534f;
 
@@ -279,6 +279,18 @@ transition: transform 0.2s ease-out;
     justify-self: flex-end;
 }
 
+/* Images of Products */
+.products-sub-head img {
+    width: 300px;
+    height: 300pxpx;
+    margin: 5px;
+    padding: 5px;
+    border: 5px double #333;
+
+}
+
+
+
 /* Contacts */
 .contacts-head img{
     width: 300px;
@@ -313,6 +325,7 @@ transition: transform 0.2s ease-out;
 .social h3{
     text-align: center;
 }
+
 
 
 
